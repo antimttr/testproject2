@@ -6,7 +6,7 @@ import android.widget.TextView;
 import com.example.mwest.testproject.MainActivity;
 import com.example.mwest.testproject.R;
 
-/**
+/**asdfasdf
  * Created by mwest on 4/13/2016.
  */
 public class Junit_test extends ActivityInstrumentationTestCase2<MainActivity>{
