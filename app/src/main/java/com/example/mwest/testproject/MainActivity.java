@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 operand2 = (EditText) findViewById(R.id.op2);
                 output   = (TextView) findViewById(R.id.textView2);
                 Integer sum = Integer.parseInt(operand1.getText().toString())
-                        + Integer.parseInt(operand2.getText().toString());
+                        - Integer.parseInt(operand2.getText().toString());
 
                 output.setText(sum.toString());
             }
