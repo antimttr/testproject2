@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,6 +29,21 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        final Button button = (Button) findViewById(R.id.Addbutton);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Button button=(Button) v;
+                operand1 = (EditText) findViewById(R.id.op1);
+                operand2 = (EditText) findViewById(R.id.op2);
+                output   = (TextView) findViewById(R.id.textView2);
+                Integer sum = Integer.parseInt(operand1.getText().toString())
+                        + Integer.parseInt(operand2.getText().toString());
+
+                output.setText(sum.toString());
+            }
+        });
+
     }
 
     @Override
@@ -52,17 +68,6 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private EditText operand1, operand2, output;
-
-    public void buttonOnClick(View v) {
-        Button button=(Button) v;
-        operand1 = (EditText) findViewById(R.id.op1);
-        operand2 = (EditText) findViewById(R.id.op2);
-        output   = (EditText) findViewById(R.id.output);
-        Integer sum = Integer.parseInt(operand1.getText().toString())
-                    + Integer.parseInt(operand2.getText().toString());
-
-        output.setText(sum.toString());
-
-    }
+    private EditText operand1, operand2;
+    private TextView output;
 }

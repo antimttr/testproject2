@@ -39,22 +39,11 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/output"
-        android:layout_below="@+id/op2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="47dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Text Field 1"
+        android:text="Text Field 2"
         android:layout_below="@+id/op1"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -63,18 +52,17 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Text Field 3"
+        android:text=""
         android:layout_below="@+id/op2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add"
         android:id="@+id/Addbutton"
-        android:layout_below="@+id/output"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="110dp" />
+        android:layout_marginTop="110dp"
+        android:layout_below="@+id/op2" />
 
 </RelativeLayout>
